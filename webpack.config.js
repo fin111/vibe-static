@@ -1,4 +1,5 @@
 module.exports = {
+    devtool: false,
     entry: './src/js/main.js',
     output: {
         path: __dirname + '/dist',
