@@ -14,10 +14,3 @@ export const scrollToAnchor = () => {
         });
     }
 };
-
-//Scroll to anchor links on page
-// function scrollToAnchor() {
-    
-    
-// }
-// scrollToAnchor();
