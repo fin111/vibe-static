@@ -33,17 +33,8 @@ npm run build
 npm run watch
 ```
 
-## Demo
-
-Integrates smoothly with netlify:
-
-[https://static-website-template.netlify.com/](https://static-website-template.netlify.com/)
-
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
----
-
-*original created by [Vincent Will](https://wweb.dev/)*
