@@ -4,10 +4,11 @@ export const scrollToAnchor = () => {
     for (let item of anchorlinks) {  
         item.addEventListener("click", (e)=> {
             let hashval = item.getAttribute("href");
-            let target = document.querySelector(hashval);
-            target.scrollIntoView({
+            //let target = document.querySelector(hashval);
+            const offsetTop = document.querySelector(hashval).offsetTop;
+            scroll({
                 behavior: "smooth",
-                block: "start"
+                top: offsetTop
             });
             history.pushState(null, null, hashval);
             e.preventDefault();

@@ -1,5 +1,5 @@
-// import { scrollToAnchor } from "./scrollTo";
+import { scrollToAnchor } from "./scrollTo";
 import { burgerMenu } from "./menu";
 
-// scrollToAnchor();
+scrollToAnchor();
 burgerMenu();
