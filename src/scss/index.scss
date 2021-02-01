@@ -250,27 +250,29 @@ nav {
                 top: 18px;
             }
         } 
-        &.open {
-            span {
-                &:nth-child(1) {
-                    top: 9px;
-                    width: 0%;
-                    left: 50%;
-                }
-                &:nth-child(2) {
-                    transform: rotate(45deg);
-                }
-                &:nth-child(3) {
-                    transform: rotate(-45deg);
-                }
-                &:nth-child(4) {
-                    top: 18px;
-                    width: 0%;
-                    left: 50%;
-                }
+    }
+    &.open {
+      .menu {
+        span {
+            &:nth-child(1) {
+                top: 9px;
+                width: 0%;
+                left: 50%;
+            }
+            &:nth-child(2) {
+                transform: rotate(45deg);
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+            &:nth-child(4) {
+                top: 18px;
+                width: 0%;
+                left: 50%;
             }
         }
-    }
+      }
+  }
 }
 
 .navigation {
