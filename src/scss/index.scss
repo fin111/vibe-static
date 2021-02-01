@@ -148,6 +148,12 @@ a:focus, a:active, button:focus, button:active {
     outline: thin dotted; 
 }
 
+input, textarea {
+  &:invalid {
+    border: 2px solid red;
+  }
+}
+
 img {
     max-width: 100%;
     height: auto;
