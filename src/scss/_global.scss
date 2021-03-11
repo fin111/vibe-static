@@ -1,0 +1,132 @@
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  font-weight: 300;
+  color: $body-text;
+}
+
+a:focus, a:active, button:focus, button:active { 
+    outline: thin dotted; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    li {
+        a {
+        text-decoration: none;
+        }
+    }
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
+.angle_white {
+  border-bottom: 25px solid $white;
+  border-right: 100vw solid transparent;
+  position: absolute;
+  bottom: -1px;
+}
+
+.angle_blue-top {
+  border-bottom: 25px solid $turquoise;
+  border-left: 100vw solid transparent;
+  position: absolute;
+  top: -24px;
+}
+
+.angle_blue-bottom {
+  border-top: 25px solid $turquoise;
+  border-left: 100vw solid transparent;
+  position: absolute;
+  bottom: -24px;
+}
+
+.angle_dark-top {
+  border-bottom: 25px solid $dark-blue;
+  border-left: 100vw solid transparent;
+  position: absolute;
+  top: -24px;
+}
+
+.coloured_bg {
+  padding: 40px 0;
+  background-color: $turquoise;
+  position: relative;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 30px 0;
+
+  &.what_we_offer {
+    background-color: $white;
+    width: 85vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: -80px;
+    z-index: 10;
+    position: relative;
+    padding-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    h2, p {
+      text-align: left;
+    }
+  }
+
+  &.what_we_are_about {
+    background-color: white;
+    width: 85vw;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: -80px 0 0 auto;
+    z-index: 10;
+    position: relative;
+    padding-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    h2, p {
+      text-align: left;
+    }
+  }
+
+  &.contact_us {
+    padding-top: 55px;
+  }
+}
+
+.flex-container {
+  @media (min-width:768px) {
+      display: flex;
+  }
+  .text-container {
+      padding-bottom: 20px;
+      @media (min-width:768px) {
+          width: 50%;
+          padding-right: 20px;
+          padding-bottom: 0;
+          &.reverse-order {
+              order: 1;
+              padding: 0 0 0 20px;
+          }
+      }
+  }
+  .image-container {
+      @media (min-width:768px) {
+          width: 50%;
+      }
+  }
+}

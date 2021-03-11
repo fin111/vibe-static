@@ -1,0 +1,36 @@
+footer {
+  background-color: $dark-blue;
+  position: relative;
+  padding: 20px 0;
+
+  .top_container {
+    display: flex;
+    margin-bottom: 20px;
+
+    .footer_img {
+      width: 100px;
+    }
+    .conntact {
+      margin-left: auto;
+      p, a {
+        color: $white;
+        text-decoration: none;
+      }
+      p {
+        text-align: right;
+      }
+      .other_contact_links {
+        li {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .copyright {
+    p {
+      text-align: center;
+      color: $white;
+      font-size: 0.875rem;
+    }
+  }
+}

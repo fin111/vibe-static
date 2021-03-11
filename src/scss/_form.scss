@@ -1,0 +1,35 @@
+form {
+  padding: 20px 0;
+  .form-control {
+    margin-bottom: 15px;
+    input, textarea {
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid $dark-grey;
+      color: $dark-grey;
+    }
+    textarea {
+      min-height: 100px;
+    }
+    button {
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      background-color: $dark-blue;
+      color: $white;
+      border: 0;
+      padding: 12px 20px;
+      min-width: 175px;
+      margin: 0 auto;
+      display: block;
+      border-radius: 5px;
+    }
+  }
+
+}
+
+input, textarea {
+  &:invalid {
+    //border: 2px solid red;
+  }
+}
