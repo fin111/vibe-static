@@ -5,7 +5,7 @@ export const scrollToAnchor = () => {
         item.addEventListener("click", (e)=> {
             let hashval = item.getAttribute("href");
             let target = document.querySelector(hashval);
-            const offsetTop = target.offsetTop;
+            const offsetTop = target.offsetTop - 50;
             console.log(offsetTop);
             scroll({
                 behavior: "smooth",
