@@ -19,8 +19,13 @@ ul {
     li {
         a {
         text-decoration: none;
+        color: $body-text;
         }
     }
+}
+
+p {
+  font-size: 0.875rem;
 }
 
 h2 {
@@ -71,11 +76,11 @@ h2 {
 }
 
 section {
-  padding: 30px 0;
+  padding: 20px 0;
 
   &.what_we_offer {
     background-color: $white;
-    width: 85vw;
+    width: 65vw;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-bottom: -80px;
@@ -90,7 +95,7 @@ section {
 
   &.what_we_are_about {
     background-color: white;
-    width: 85vw;
+    width: 65vw;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin: -80px 0 0 auto;
@@ -105,6 +110,11 @@ section {
 
   &.contact_us {
     padding-top: 55px;
+    @media (min-width:768px) {
+      .inner {
+        max-width: 600px;
+      }
+    }
   }
 }
 
@@ -113,15 +123,14 @@ section {
       display: flex;
   }
   .text-container {
-      padding-bottom: 20px;
       @media (min-width:768px) {
-          width: 50%;
-          padding-right: 20px;
           padding-bottom: 0;
           &.reverse-order {
               order: 1;
-              padding: 0 0 0 20px;
           }
+      }
+      &.first-container {  
+        padding: 0 0 30px 0;
       }
   }
   .image-container {
