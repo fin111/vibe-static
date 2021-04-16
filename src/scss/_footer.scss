@@ -3,13 +3,16 @@ footer {
   position: relative;
   padding: 20px 0;
 
+  .footer_img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
   .top_container {
     display: flex;
     margin-bottom: 20px;
 
-    .footer_img {
-      width: 100px;
-    }
     .conntact {
       margin-left: auto;
       p, a {
@@ -28,7 +31,7 @@ footer {
   }
   .copyright {
     p {
-      text-align: center;
+      text-align: right;
       color: $white;
       font-size: 0.875rem;
     }

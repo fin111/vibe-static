@@ -26,6 +26,9 @@ ul {
 
 p {
   font-size: 0.875rem;
+  @media (min-width:1024px) {
+    font-size: 1rem;
+  }
 }
 
 h2 {
@@ -33,6 +36,9 @@ h2 {
     padding-bottom: 15px;
     font-size: 1.75rem;
     font-weight: 300;
+    @media (min-width:1024px) {
+      font-size: 2rem;
+    }
 }
 
 .angle_white {
@@ -67,6 +73,14 @@ h2 {
   padding: 40px 0;
   background-color: $turquoise;
   position: relative;
+  .image-container {
+    background: url(../images/mimosa-bg.jpg);
+    background-size: cover;
+    height: 250px;
+    @media (min-width:1024px) {
+      height: 300px;
+    }
+  }
 }
 
 .inner {
@@ -77,6 +91,9 @@ h2 {
 
 section {
   padding: 20px 0;
+  @media (min-width:1024px) {
+    padding: 30px 0;
+  }
 
   &.what_we_offer {
     background-color: $white;
@@ -86,25 +103,37 @@ section {
     margin-bottom: -80px;
     z-index: 10;
     position: relative;
-    padding-top: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     h2, p {
       text-align: left;
     }
+    @media (min-width:1024px) {
+      .inner {
+        max-width: 600px;
+        margin: 0 0 0 auto;
+        padding-right: 40px;
+      }
+    }
   }
 
   &.what_we_are_about {
-    background-color: white;
+    background-color: $white;
     width: 65vw;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin: -80px 0 0 auto;
     z-index: 10;
     position: relative;
-    padding-top: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     h2, p {
       text-align: left;
+    }
+    @media (min-width:1024px) {
+      .inner {
+        max-width: 600px;
+        margin: 0 auto 0 0;
+        padding-left: 40px;
+      }
     }
   }
 
@@ -131,11 +160,14 @@ section {
       }
       &.first-container {  
         padding: 0 0 30px 0;
-      }
-  }
-  .image-container {
-      @media (min-width:768px) {
-          width: 50%;
+        p {
+          text-align: justify;
+        }
+        @media (min-width:1024px) {
+          max-width: 1000px;
+          margin: 0 auto;
+
+        }
       }
   }
 }
