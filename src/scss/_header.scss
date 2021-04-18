@@ -1,7 +1,10 @@
 header {
   position: relative;
   .image-container {
-      margin-top: 50px;
+      margin-top: 58px;
+      @media (min-width:768px) {
+        margin-top: 65px;
+    }
       @media (min-width:1024px) {
           width: 100vw;
       }
@@ -29,6 +32,10 @@ header {
         font-weight: 300;
         margin: 0;
         background-color: rgba(0,0,0,0.1);
+        max-width: 350px;
+        @media (min-width:1024px) {
+          max-width: 550px;           
+      }
       }
   }
 } 
@@ -51,7 +58,7 @@ nav {
     padding : 0 10px;
     .image-top {
       margin: 10px 10px 10px 0;
-      width: 200px;
+      width: 250px;
       @media (min-width:768px) {
           width: 300px;
       }

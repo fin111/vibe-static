@@ -25,9 +25,16 @@ ul {
 }
 
 p {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   @media (min-width:1024px) {
     font-size: 1rem;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+    @media (min-width:1024px) {
+      font-size: 3rem;           
   }
 }
 
@@ -97,7 +104,7 @@ section {
 
   &.what_we_offer {
     background-color: $white;
-    width: 65vw;
+    width: 75vw;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-bottom: -80px;
@@ -108,6 +115,7 @@ section {
       text-align: left;
     }
     @media (min-width:1024px) {
+      width: 65vw;
       .inner {
         max-width: 600px;
         margin: 0 0 0 auto;
@@ -118,7 +126,7 @@ section {
 
   &.what_we_are_about {
     background-color: $white;
-    width: 65vw;
+    width: 75vw;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin: -80px 0 0 auto;
@@ -129,6 +137,7 @@ section {
       text-align: left;
     }
     @media (min-width:1024px) {
+      width: 65vw;
       .inner {
         max-width: 600px;
         margin: 0 auto 0 0;
