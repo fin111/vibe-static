@@ -1,3 +1,17 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  //scroll-behavior: smooth;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
+}
+
 body {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-size: 100%;
@@ -17,6 +31,7 @@ img {
 ul {
     list-style: none;
     li {
+      padding-bottom: 10px;
         a {
         text-decoration: none;
         color: $body-text;
@@ -26,6 +41,7 @@ ul {
 
 p {
   font-size: 0.9375rem;
+  padding-bottom: 10px;
   @media (min-width:1024px) {
     font-size: 1rem;
   }
@@ -173,7 +189,7 @@ section {
           text-align: justify;
         }
         @media (min-width:1024px) {
-          max-width: 1000px;
+          max-width: 900px;
           margin: 0 auto;
 
         }
